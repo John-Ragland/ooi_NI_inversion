@@ -1,8 +1,8 @@
 *.ipynb_checkpoints
 *.png
 figures
-simulation/kraken_files
-simulation/multiprocessing
+simulation/kraken_files/*
+simulation/multiprocessing/*
 *.env
 *.prt
 *.flp

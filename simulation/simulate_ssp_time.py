@@ -11,7 +11,7 @@ import scipy
 from geopy.distance import geodesic
 
 ## Load Stitched SSP
-fn = '/datadrive/CTD_data/stitched_2015_2023.nc'
+fn = '/datadrive/CTD_data/stitched_2015_2023_ooipy.nc'
 ssp_stitch = xr.open_dataarray(fn)
 
 ## Write Environment File and flp files
