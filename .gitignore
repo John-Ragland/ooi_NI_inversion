@@ -6,3 +6,4 @@ simulation/multiprocessing
 *.env
 *.prt
 *.flp
+*.nc
