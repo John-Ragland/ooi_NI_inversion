@@ -7,3 +7,4 @@ simulation/multiprocessing/*
 *.prt
 *.flp
 *.nc
+*.svg
