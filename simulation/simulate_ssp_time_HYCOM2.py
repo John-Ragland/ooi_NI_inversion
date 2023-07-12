@@ -27,6 +27,9 @@ central_caldera = (45.954681, -130.008896)
 eastern_caldera = (45.939671, -129.973801)
 cc_ec = geodesic(central_caldera, eastern_caldera).km
 
+# manually change distance
+cc_ec = 3.20212 #km
+
 pts = []
 for k in tqdm(range(ssp_full.shape[0])):
 
@@ -54,5 +57,5 @@ for k in tqdm(range(ssp_full.shape[0])):
 # Construct DataArray from simulation and save to disc
 TDGFs = xr.DataArray(np.array(pts), dims=['date', 'time'], coords={
                      'date': ssp_full.time.values, 'time': t}, name='Time Domain Greens Function')
-fn = '/datadrive/simulation/caldera_inversion_timeseries_HYCOM2.nc'
+fn = '/datadrive/simulation/caldera_inversion_timeseries_HYCOM2_3202km.nc'
 TDGFs.to_netcdf(fn)

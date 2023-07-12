@@ -8,3 +8,5 @@ simulation/multiprocessing/*
 *.flp
 *.nc
 *.svg
+*.mod
+*.shd
